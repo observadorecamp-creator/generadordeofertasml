@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Ofertas ML - Hugo Cal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .header {
+            background: white;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        h1 { color: #FFE600; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .highlight { color: #3483FA; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
+        .banner {
+            background: linear-gradient(135deg, #FFE600, #FFA500);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            position: relative;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #FF0000;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .product-info { padding: 1.5rem; }
+        .price { font-size: 2rem; font-weight: bold; color: #00A650; }
+        .old-price { text-decoration: line-through; color: #999; }
+        .btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #3483FA, #2968c8);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>🔥 <span class="highlight">OFERTAS</span> ML</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="banner">
+            <h2>¡Las Mejores Ofertas del Día! 🎉</h2>
+            <p>Descuentos hasta 70% | Envío Gratis</p>
+        </section>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <span>📱</span>
+                    <div class="badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <h3>iPhone 15 Pro Max 256GB</h3>
+                    <div style="margin: 1rem 0;">
+                        <span class="price">$18,999</span>
+                        <span class="old-price">$25,999</span>
+                    </div>
+                    <button class="btn" onclick="window.open('https://mercadolibre.com.mx', '_blank')">
+                        VER OFERTA 🔥
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span>💻</span>
+                    <div class="badge">-35%</div>
+                </div>
+                <div class="product-info">
+                    <h3>Laptop Lenovo IdeaPad 3</h3>
+                    <div style="margin: 1rem 0;">
+                        <span class="price">$8,499</span>
+                        <span class="old-price">$12,999</span>
+                    </div>
+                    <button class="btn" onclick="window.open('https://mercadolibre.com.mx', '_blank')">
+                        VER OFERTA 🔥
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span>🎧</span>
+                    <div class="badge">-39%</div>
+                </div>
+                <div class="product-info">
+                    <h3>AirPods Pro 2da Gen</h3>
+                    <div style="margin: 1rem 0;">
+                        <span class="price">$4,299</span>
+                        <span class="old-price">$6,999</span>
+                    </div>
+                    <button class="btn" onclick="window.open('https://mercadolibre.com.mx', '_blank')">
+                        VER OFERTA 🔥
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>💰 Las mejores ofertas de Mercado Libre</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://www.mercadolibre.com.mx/social/hmca1314" style="color: #FFE600; margin: 0 1rem;">🛒 ML</a>
+            <a href="https://t.me/hugocal13" style="color: #FFE600; margin: 0 1rem;">📱 Telegram</a>
+            <a href="https://wa.me/qr/PQ7JEUZGJN27P1" style="color: #FFE600; margin: 0 1rem;">💬 WhatsApp</a>
+        </p>
+        <p style="margin-top: 1rem;">© 2025 Hugo Cal</p>
+    </footer>
+</body>
+</html>
